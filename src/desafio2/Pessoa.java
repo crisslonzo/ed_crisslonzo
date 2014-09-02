@@ -26,22 +26,27 @@ public class Pessoa {
         
     }
 
-    public String getNome() {
+    public String getNome() {  //pegar nome
         return nome;
     }
 }
 
 class DadosArray {             //Classe dados
 
-    private Pessoa[] a;
+    private Pessoa[] a;         //vetor do tipo Pessoa guardar varias instancias de pessoa
     private int nElems;
 
     public DadosArray(int max) {         //construtor
         a = new Pessoa[max];
         nElems = 0;
     }
+    
+    public int size()
+    {
+        return nElems;
+    }
 
-    public Pessoa find(String procuraNome){
+   /* public Pessoa find(String procuraNome){
         int j;
         for(j=0; j<nElems; j++)
             if( a[j].getNome().equals(procuraNome))
@@ -52,6 +57,26 @@ class DadosArray {             //Classe dados
          else
              return a[j];
   
+    } */
+    
+    public int findPorNome(String procuraNome){   // busca por nome
+        int lowerBound = 0;
+        int upperBound = nElems-1;
+        int curIn;
+        
+        while(true){
+            curIn =(lowerBound + upperBound) /2;
+            if(a[curIn].getNome().equals(procuraNome))    //getNome pq obj Pessoa
+                    return curIn;
+                    else if(lowerBound > upperBound)
+                    return nElems;
+                            else{
+                            if(a[curIn].getNome().compareTo(procuraNome) < 0)
+                                lowerBound = curIn + 1;
+                            else
+                                upperBound = curIn - 1;
+                            }
+        }
     }
 
     // Inserir pessoa no vetor

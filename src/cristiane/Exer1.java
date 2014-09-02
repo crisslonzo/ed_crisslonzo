@@ -127,27 +127,6 @@ class EstruturaE1  //Criamos aqui nossa classe EstruturaVetor
 
 
 
-public class Pessoa{
-    private String nome;
-    private String profissao;
-    private int idade;
-    
-    public Pessoa(String nome, String profissao, int idade){
-        nome = no;
-        profissao = prof;
-        idade = id;
-       }
-    public void displayPessoa()
-    {
-        System.out.print("O nome é:" + nome);
-        System.out.print("A profissão é:" + profissao);
-    } 
-    
-    
-    
-    
-}
-
 public class Exer1 {
     public static void main(String[] args)
           {
