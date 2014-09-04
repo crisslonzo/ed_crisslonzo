@@ -8,7 +8,7 @@ package ExercicioAvancado;
 
 /**
  *
- * @author aleaguado
+ * @author vaio
  */
 public class Jogador
    { 

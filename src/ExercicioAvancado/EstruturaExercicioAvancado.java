@@ -8,7 +8,7 @@ package ExercicioAvancado;
 
 /**
  *
- * @author aleaguado
+ * @author vaio
  */
  class EstruturaExercicioAvancado   //Criamos aqui nossa classe EstruturaVetor
    { 
@@ -123,7 +123,7 @@ package ExercicioAvancado;
 //--------------------------------------------------------------
 //Método de inserção ORDENADA por idade!!! ....
 //--------------------------------------------------------------
-   public void insert( String no, double al, int id)    // insere o elemento no vetor
+   public void insert( String no, float al, int id)    // insere o elemento no vetor
       {
       int j = 0;
       for(j=0; j<nElems; j++)        // localiza onde esse elemento se encaixa
@@ -154,7 +154,6 @@ package ExercicioAvancado;
          return true;
          }
       }  // finaliza remoção
-
 //--------------------------------------------------------------
 //Método de visualização ....
 //--------------------------------------------------------------
