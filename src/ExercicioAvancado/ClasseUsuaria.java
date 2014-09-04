@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author aleaguado
+ * @author vaio
  */
 public class ClasseUsuaria {
   
