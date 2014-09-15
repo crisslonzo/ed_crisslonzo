@@ -133,7 +133,7 @@ class EstruturaDadosPaleo  //Criamos aqui nossa classe EstruturaVetor
 //--------------------------------------------------------------
 //Método de inserção ORDENADA por cor com String!!! ....
 //--------------------------------------------------------------
-   public void insert(String c, double t)    // insere o elemento no vetor
+   public void insert(String n, String c, double t)    // insere o elemento no vetor
       {
       int j;
       for(j=0; j<nElems; j++)        // localiza onde esse elemento se encaixa
@@ -143,7 +143,7 @@ class EstruturaDadosPaleo  //Criamos aqui nossa classe EstruturaVetor
       for(int k=nElems; k>j; k--)    // move os elementos maiores uma posição p/ frente
          a[k] = a[k-1];
       //Apos abrir um espaço no lugar certo, ele cria o nome objeto Pessoa na posição aberta!!!
-      a[j] = new Paleontologo(c, t);                  // insere o elemento na posição necessária
+      a[j] = new Paleontologo(n, c, t);                  // insere o elemento na posição necessária
       nElems++;                      // incrementa a variavel de controle de tamanho
       }  // finaliza o método de inserção
 
@@ -156,7 +156,15 @@ class EstruturaDadosPaleo  //Criamos aqui nossa classe EstruturaVetor
          a[j].display();
       }
    //-----------------------------------
+  //Método de visualização ....
+//--------------------------------------------------------------
+   public void displayAll()             // mostra todo conteúdo do vetor
+      {
+        for (int i = 0; i < nElems; i++)
+         a[i].display();
+      }
    
+   //-----------------------------------
            //--------------------------------------------------------------
    // Rotina de Ordenação pelo método de Inserção (InsertSort)
    //-----------------------------------------------------------

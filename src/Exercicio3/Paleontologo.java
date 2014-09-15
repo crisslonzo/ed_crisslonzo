@@ -12,12 +12,14 @@ package Exercicio3;
  */
 public class Paleontologo   
    { 
+   private String nome;
    private String cor;
    private double tamanho;
    
 //--------------------------------------------------------------
-   public Paleontologo(String c, double t)
+   public Paleontologo(String n, String c, double t)
       {                               // construtor
+      nome = n;
       cor = c;
       tamanho = t;
      
@@ -25,13 +27,22 @@ public class Paleontologo
 //--------------------------------------------------------------
    public void display()
       {
-      System.out.print("   Cor: " + cor);
-      System.out.print(", Tamanho: " + tamanho);
+      System.out.print("Nome do animal:" + nome + "  Cor: " + cor + ", Tamanho:   " + tamanho);
+     
       }
 //--------------------------------------------------------------
-   public String getCor()           // retorna cor
-      { return cor; }
+  public String getNome()
+     {
+      return nome;
+     }
    
-      public double getTamanho()           // retorna tamanho
-      { return tamanho; }
+   public String getCor()           // retorna cor
+      { 
+       return cor;
+      }
+   
+     public double getTamanho()           // retorna tamanho
+      { 
+        return tamanho; 
+      }
    }  // Final da Classe Paleontologo
