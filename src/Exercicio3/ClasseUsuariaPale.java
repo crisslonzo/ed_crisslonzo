@@ -27,7 +27,7 @@ public class ClasseUsuariaPale {
                  System.out.println("Digite a cor " );
                  String cor = entrada.nextLine();
                  System.out.println("Digite o tamanho: " );
-                 double tamanho = entrada.nextDouble();
+                 double tamanho = entradaDouble.nextDouble();
                  
                  arr.insert(nome, cor, tamanho);
               }
@@ -35,34 +35,32 @@ public class ClasseUsuariaPale {
               System.out.println("Vamos ver se esta ordenado por cor:");
               
               arr.insertionSortCor();
-              arr.displayAll();
+              arr.display();
               
               System.out.println("Muito bem! Vamos fazer uma busca binária de uma cor? Digite:");
               
-              int posicao = arr.findByColor(entrada.nextLine());
+                      
+               if (!arr.findByColor(entrada.nextLine()))
+                  System.out.println("Nenhum dinossauro encontrado");
               
-              if (posicao != arr.size())
-                    System.out.println("Encontrei na posicao " + posicao );
-              else
-                    System.out.println("Não encontrado");
               
               arr.insertionSortTamanho();
               System.out.println("Acabei de ordenar os dados por tamanho, ok?");
               
-              arr.displayAll();
+              arr.display();
               
               System.out.println("Vamos fazer uma busca binária por tamanho? Digite o tamanho:");
 
-             double posicao1 = arr.findByTamanho(entradaDouble.nextDouble());
+             //double posicao1 = arr.findByTamanho(entradaDouble.nextDouble());
+              
+              if (!arr.findByTamanho(entradaDouble.nextDouble()))
+                    System.out.println("Nenhum dinossauro encontrado"); 
               
               
+                    System.out.println("Agora vou imprimir todos");
               
-              if (posicao1 != arr.size())
-                    System.out.println("Encontrei na posicao " + posicao1 );
-              else
-                    System.out.println("Não encontrado");
+              arr.display();
               
-              arr.displayAll();
           }      
           
 }

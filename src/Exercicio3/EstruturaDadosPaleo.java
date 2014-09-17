@@ -186,6 +186,9 @@ class EstruturaDadosPaleo  //Criamos aqui nossa classe EstruturaVetor
          }  // end for
       }  // end insertionSort()
        
+        //--------------------------------------------------------------
+   // Rotina de Ordenação pelo método de Inserção (InsertSort)
+   //-----------------------------------------------------------
        public void insertionSortCor()
       {
       int in, out;
