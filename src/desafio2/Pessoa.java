@@ -46,7 +46,7 @@ class DadosArray {             //Classe dados
         return nElems;
     }
 
-   /* public Pessoa find(String procuraNome){
+    public Pessoa find(String procuraNome){
         int j;
         for(j=0; j<nElems; j++)
             if( a[j].getNome().equals(procuraNome))
@@ -56,8 +56,9 @@ class DadosArray {             //Classe dados
             System.out.println("Não foi enctrado o nome procurado!!!");
          else
              return a[j];
+             return null;
   
-    } */
+    } 
     
     public int findPorNome(String procuraNome){   // busca por nome
         int lowerBound = 0;

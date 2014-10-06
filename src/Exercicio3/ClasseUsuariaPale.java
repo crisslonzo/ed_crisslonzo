@@ -40,7 +40,7 @@ public class ClasseUsuariaPale {
               System.out.println("Muito bem! Vamos fazer uma busca binária de uma cor? Digite:");
               
                       
-               if (!arr.findByColor(entrada.nextLine()))
+               if (!arr.findAd(entrada.nextLine()))
                   System.out.println("Nenhum dinossauro encontrado");
               
               

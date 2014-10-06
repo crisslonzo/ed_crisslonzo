@@ -141,7 +141,7 @@ package ExercicioAvancado;
 //Método de remoção ....
 //--------------------------------------------------------------
   
-    public boolean delete(int value)
+  /*  public boolean delete(int value)
       {
       int j = findByIdade(value);           //Utiliza a busca binária para remover!!!
       if(j==nElems)                  // caso não encontre, retorna false!
@@ -153,7 +153,7 @@ package ExercicioAvancado;
          nElems--;                   // decrementa o tamanho
          return true;
          }
-      }  // finaliza remoção
+      }  // finaliza remoção             */
 //--------------------------------------------------------------
 //Método de visualização ....
 //--------------------------------------------------------------

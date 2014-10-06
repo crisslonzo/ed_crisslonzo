@@ -146,7 +146,7 @@ public class Exer1 {
               
               System.out.println("Digite um nome para buscar:");
               
-              if (arr.find(entrada.nextLine()))
+              if (arr.buscar(entrada.nextLine()))
                     System.out.println("Encontrei!!!");
               else
                     System.out.println("Não encontrado");
