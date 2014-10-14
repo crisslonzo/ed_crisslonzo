@@ -13,14 +13,14 @@ package listaencadeada;
 public class ListaEncadeadaApp {
    public static void main(String[] args)
       {
-      ListaEncadeada theList = new ListaEncadeada();  // criamos uma nova lista
+      ListaEncadeada lista = new ListaEncadeada();  // criamos uma nova lista
 
-      theList.insertFirst("Jessica", "Vida");      // inserimos quatro itens nela
-      theList.insertFirst("Moises", "Programar");
-      theList.insertFirst("Janaina", "Jasmim");
-      theList.insertFirst("Jonatas", "Verdade");
+      lista.insertFirst("Jessica", "Vida");      // inserimos quatro itens nela
+      lista.insertFirst("Moises", "Programar");
+      lista.insertFirst("Janaina", "Jasmim");
+      lista.insertFirst("Jonatas", "Verdade");
 
-      theList.displayList();              // mostramos a lista
+      //lista.displayList();              // mostramos a lista
 
       /*
       while( !theList.isEmpty() )         // until it's empty,
@@ -33,9 +33,9 @@ public class ListaEncadeadaApp {
               */
       
       
-      theList.displayList();              // mostramos a lista
-      if(theList.find("Jessica")  != null){
-          System.out.println("Encontrei o nome:  ");
+      //lista.displayList();              // mostramos a lista
+      if(lista.find("Jessica") != null){
+          System.out.println("Encontrei o nome: Jessica ");
       }
       else
       {

@@ -49,7 +49,7 @@ public class ListaEncadeada {
          }
       System.out.println("");
       }
-   // -------------------------------------------------------------
+   
    public No find(String nome)
    {
        No current = first;
@@ -63,4 +63,5 @@ public class ListaEncadeada {
       return current;
        
    }
+   // -------------------------------------------------------------
 }
